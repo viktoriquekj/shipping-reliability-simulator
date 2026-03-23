@@ -111,16 +111,21 @@ def _extract_metric(
 
 
 def _shock_distribution(frozen_dist, shock_pct: float):
-    """
-    Return a new frozen distribution with scale parameter increased by shock_pct.
-
-    scipy convention: scale is always the last positional argument
-    when fitted with floc=0, so args = (shape_params..., loc=0, scale).
-    """
     args = list(frozen_dist.args)
     kwds = dict(frozen_dist.kwds)
-    # Scale is last positional arg
-    args[-1] = args[-1] * (1 + shock_pct)
+
+    if args:
+        # scale is the last positional arg
+        args[-1] = args[-1] * (1 + shock_pct)
+    elif 'scale' in kwds:
+        # scale was passed as a keyword argument
+        kwds['scale'] = kwds['scale'] * (1 + shock_pct)
+    else:
+        raise ValueError(
+            f"Cannot locate scale parameter in distribution "
+            f"'{frozen_dist.dist.name}': args={args}, kwds={kwds}"
+        )
+
     return frozen_dist.dist(*args, **kwds)
 
 

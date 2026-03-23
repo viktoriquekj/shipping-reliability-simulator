@@ -1,0 +1,80 @@
+{
+  "route": "Rotterdam \u2192 Singapore \u2192 Shanghai",
+  "scheduled_days": 28.0,
+  "n_iterations": 10000,
+  "seed": 42,
+  "congestion_year": 2023,
+  "congestion_indices": {
+    "Rotterdam": 0.8868,
+    "Singapore": 0.9954,
+    "Shanghai": 1.118
+  },
+  "kpis": {
+    "scheduled_days": 28.0,
+    "mean_days": 27.6799,
+    "std_days": 1.4995,
+    "p50_days": 27.6512,
+    "p75_days": 28.6846,
+    "p90_days": 29.618,
+    "p95_days": 30.1843,
+    "p99_days": 31.2438,
+    "on_time_rate_pct": 81.35,
+    "reliability_buffer_d": 1.618,
+    "worst_case_days": 31.2438,
+    "cv": 0.0542
+  },
+  "segment_contributions": [
+    {
+      "segment": "Rotterdam \u2192 Singapore transit",
+      "mean_days": 21.0195,
+      "std_days": 1.2634,
+      "p90_days": 22.6341,
+      "pct_of_total": 75.94
+    },
+    {
+      "segment": "Singapore \u2192 Shanghai transit",
+      "mean_days": 3.9989,
+      "std_days": 0.2401,
+      "p90_days": 4.3077,
+      "pct_of_total": 14.45
+    },
+    {
+      "segment": "Singapore port delay",
+      "mean_days": 0.9908,
+      "std_days": 0.4908,
+      "p90_days": 1.6468,
+      "pct_of_total": 3.58
+    },
+    {
+      "segment": "Rotterdam port delay",
+      "mean_days": 0.9235,
+      "std_days": 0.4675,
+      "p90_days": 1.5524,
+      "pct_of_total": 3.34
+    },
+    {
+      "segment": "Shanghai port delay",
+      "mean_days": 0.7473,
+      "std_days": 0.3916,
+      "p90_days": 1.2651,
+      "pct_of_total": 2.7
+    }
+  ],
+  "sensitivity_top3": [
+    {
+      "segment": "Rotterdam \u2192 Singapore transit",
+      "delta": 0.4563,
+      "delta_pct": 1.54
+    },
+    {
+      "segment": "Singapore port delay",
+      "delta": 0.3757,
+      "delta_pct": 1.27
+    },
+    {
+      "segment": "Rotterdam port delay",
+      "delta": 0.348,
+      "delta_pct": 1.17
+    }
+  ]
+}

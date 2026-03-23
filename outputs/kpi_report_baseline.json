@@ -1,0 +1,15 @@
+{
+  "scheduled_days":28.0,
+  "mean_days":27.6799,
+  "std_days":1.4995,
+  "p50_days":27.6512,
+  "p75_days":28.6846,
+  "p90_days":29.618,
+  "p95_days":30.1843,
+  "p99_days":31.2438,
+  "on_time_rate_pct":81.35,
+  "reliability_buffer_d":1.618,
+  "worst_case_days":31.2438,
+  "cv":0.0542,
+  "scenario":"Baseline (2023 CI)"
+}

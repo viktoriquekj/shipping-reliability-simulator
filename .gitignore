@@ -22,7 +22,7 @@ build/
 # Data
 data/raw/
 data/interim/
-data/processed/
+
 *.csv
 *.parquet
 *.feather
@@ -32,9 +32,7 @@ data/processed/
 *.hdf5
 
 # Figures / outputs
-figures/
-outputs/
-reports/
+*.npy
 
 # IDEs / OS
 .DS_Store

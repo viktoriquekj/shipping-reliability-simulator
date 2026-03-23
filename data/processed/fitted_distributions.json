@@ -1,0 +1,194 @@
+{
+  "Rotterdam": {
+    "best_distribution": "gamma",
+    "params": [
+      3.922948084072689,
+      0,
+      0.242618774027853
+    ],
+    "congestion_strategy": {
+      "type": "dampened",
+      "coefficient": 0.3
+    },
+    "fit_quality": {
+      "ks_stat": 0.013906,
+      "ks_pval": 0.829171,
+      "aic": 2385.8827
+    },
+    "analytical_kpis": {
+      "best_distribution": "gamma",
+      "mean_days": 0.9518,
+      "p50_days": 0.8722,
+      "p75_days": 1.2177,
+      "p90_days": 1.5959,
+      "p95_days": 1.8545,
+      "p99_days": 2.4073,
+      "ks_stat": 0.013906,
+      "ks_pval": 0.829171
+    },
+    "fitting_metadata": {
+      "n_annual_medians": 6,
+      "years_used": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023
+      ],
+      "cv_assumption": 0.5,
+      "n_synthesised_samples": 1998,
+      "seed": 42,
+      "all_candidate_results": {
+        "gamma": {
+          "ks_stat": 0.013906,
+          "ks_pval": 0.829171,
+          "aic": 2385.8827
+        },
+        "weibull_min": {
+          "ks_stat": 0.040161,
+          "ks_pval": 0.003088,
+          "aic": 2469.3999
+        },
+        "lognorm": {
+          "ks_stat": 0.048335,
+          "ks_pval": 0.00017,
+          "aic": 2481.9429
+        },
+        "expon": {
+          "ks_stat": 0.253647,
+          "ks_pval": 0.0,
+          "aic": 3802.5158
+        }
+      }
+    }
+  },
+  "Singapore": {
+    "best_distribution": "gamma",
+    "params": [
+      4.107468050859942,
+      0,
+      0.2415442473610521
+    ],
+    "congestion_strategy": {
+      "type": "inverse",
+      "coefficient": 0.5
+    },
+    "fit_quality": {
+      "ks_stat": 0.012273,
+      "ks_pval": 0.920531,
+      "aic": 2477.2023
+    },
+    "analytical_kpis": {
+      "best_distribution": "gamma",
+      "mean_days": 0.9921,
+      "p50_days": 0.9129,
+      "p75_days": 1.2646,
+      "p90_days": 1.6482,
+      "p95_days": 1.9098,
+      "p99_days": 2.4676,
+      "ks_stat": 0.012273,
+      "ks_pval": 0.920531
+    },
+    "fitting_metadata": {
+      "n_annual_medians": 6,
+      "years_used": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023
+      ],
+      "cv_assumption": 0.5,
+      "n_synthesised_samples": 1998,
+      "seed": 42,
+      "all_candidate_results": {
+        "gamma": {
+          "ks_stat": 0.012273,
+          "ks_pval": 0.920531,
+          "aic": 2477.2023
+        },
+        "lognorm": {
+          "ks_stat": 0.036519,
+          "ks_pval": 0.009454,
+          "aic": 2557.3418
+        },
+        "weibull_min": {
+          "ks_stat": 0.043779,
+          "ks_pval": 0.000915,
+          "aic": 2563.0064
+        },
+        "expon": {
+          "ks_stat": 0.26706,
+          "ks_pval": 0.0,
+          "aic": 3968.4483
+        }
+      }
+    }
+  },
+  "Shanghai": {
+    "best_distribution": "gamma",
+    "params": [
+      3.704589456401003,
+      0,
+      0.20130245656048285
+    ],
+    "congestion_strategy": {
+      "type": "none",
+      "coefficient": 0.0
+    },
+    "fit_quality": {
+      "ks_stat": 0.014409,
+      "ks_pval": 0.795456,
+      "aic": 1502.7341
+    },
+    "analytical_kpis": {
+      "best_distribution": "gamma",
+      "mean_days": 0.7457,
+      "p50_days": 0.6798,
+      "p75_days": 0.9584,
+      "p90_days": 1.2652,
+      "p95_days": 1.4756,
+      "p99_days": 1.9266,
+      "ks_stat": 0.014409,
+      "ks_pval": 0.795456
+    },
+    "fitting_metadata": {
+      "n_annual_medians": 6,
+      "years_used": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023
+      ],
+      "cv_assumption": 0.5,
+      "n_synthesised_samples": 1998,
+      "seed": 42,
+      "all_candidate_results": {
+        "gamma": {
+          "ks_stat": 0.014409,
+          "ks_pval": 0.795456,
+          "aic": 1502.7341
+        },
+        "weibull_min": {
+          "ks_stat": 0.036264,
+          "ks_pval": 0.010183,
+          "aic": 1587.2659
+        },
+        "lognorm": {
+          "ks_stat": 0.047589,
+          "ks_pval": 0.000227,
+          "aic": 1592.6065
+        },
+        "expon": {
+          "ks_stat": 0.241353,
+          "ks_pval": 0.0,
+          "aic": 2827.6763
+        }
+      }
+    }
+  }
+}
