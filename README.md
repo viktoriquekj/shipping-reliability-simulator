@@ -295,4 +295,4 @@ Place all files in `data/raw/`.
 
 **Victoria Cojocaru** — Data Scientist
 
-[LinkedIn](www.linkedin.com/in/cojocaru-victoria)
+[LinkedIn](www.linkedin.com/in/cojocaru-victoria/)
